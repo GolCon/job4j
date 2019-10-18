@@ -6,6 +6,6 @@ public class Triangle {
         double summ1 =ab+ac;
         double summ2 =ac+bc;
         double summ3 =ab+bc;
-        return summ1 == bc && summ2 == ab && summ3 == ac;
+        return summ1 > bc && summ2 > ab && summ3 > ac;
     }
 }
