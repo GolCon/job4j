@@ -7,7 +7,7 @@ public class SqMaxTest {
     @Test
     public void testMaxSq(){
         SqMax check = new SqMax();
-        int result = check.max(1,2,3,4);
-        assertThat(result, is (4));
+        int result = check.max(4,2,8,4);
+        assertThat(result, is (8));
     }
 }
