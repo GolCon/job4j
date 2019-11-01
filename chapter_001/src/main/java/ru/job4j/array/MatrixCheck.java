@@ -18,17 +18,6 @@ public class MatrixCheck {
                 if (board[cell][row] == 'X') {
                     cnt++;
                 }
-                // for (int i = 0; i < board.length; ++i) {
-                //   if (board[row][i] == 'X') {
-                //     count++;
-                //}
-
-                //for (int in = 0; in < board.length; ++in) {
-                //  if (board[in][cell] == 'X') {
-                //    count++;
-                //}
-                //}
-
 
             }
             if (count >= board.length || cnt >= board.length) {
