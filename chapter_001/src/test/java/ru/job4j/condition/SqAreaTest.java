@@ -6,12 +6,12 @@ import ru.job4j.condition.SqArea;
 
 public class SqAreaTest {
     @Test
-    public void square(){
-        int inP =6;
-        int inK=2;
-        double out =2;
-        double expected=SqArea.square(inP,inK);
-        Assert.assertEquals(out,expected,0.01);
+    public void square() {
+        int inP = 6;
+        int inK = 2;
+        double out = 2;
+        double expected = SqArea.square(inP, inK);
+        Assert.assertEquals(out, expected, 0.01);
 
     }
 }

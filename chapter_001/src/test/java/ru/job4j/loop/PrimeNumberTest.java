@@ -22,7 +22,7 @@ public class PrimeNumberTest {
     }
 
     @Test
-    public void When2() {
+    public void when2() {
         PrimeNumber prime = new PrimeNumber();
         int count = prime.calc(2);
         assertThat(count, is(1));
