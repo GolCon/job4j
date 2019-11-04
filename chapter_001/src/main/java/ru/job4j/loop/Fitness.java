@@ -11,14 +11,3 @@ public class Fitness {
         return month;
     }
 }
-
-//public class Fitness {
-//    public int calc(int ivan,int nik){
-//        int month=0;
-//        for (month=0;ivan<nik;++month){
-//            ivan*=3;
-//            nik*=2;
-//        }
-//        return month;
-//    }
-//}

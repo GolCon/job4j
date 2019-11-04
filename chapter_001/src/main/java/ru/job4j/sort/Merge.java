@@ -7,15 +7,13 @@ public class Merge {
         int[] rsl = new int[left.length + right.length];
         int i = 0;
         int n = 0;
-
         while (i + n < left.length + right.length) {
-
-            if (n == right.length) { //условие не позволяющее запрасить ячейку n вне размера массива
+            if (n == right.length) {
                 while (i < left.length) {
                     rsl[i + n] = left[i];
                     ++i;
                 }
-            } else if (i == left.length) { //условие не позволяющее запрасить ячейку i вне размера массива
+            } else if (i == left.length) {
                 while (n < right.length) {
                     rsl[i + n] = right[n];
                     ++n;
@@ -30,7 +28,6 @@ public class Merge {
                     ++n;
                 }
             }
-
         }
         return rsl;
     }
@@ -40,7 +37,6 @@ public class Merge {
         int[] rsl = process.merge(
                 new int[]{1, 3, 5},
                 new int[]{2, 4}
-
         );
         System.out.print(Arrays.toString(rsl));
     }

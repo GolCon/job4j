@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 
 public class TurnTest {
     @Test
-    public void whenTurnArrayWithEvenAmountOfElementsThenTurnedArray() {
+    public void array4() {
         Turn turner = new Turn();
         int[] input = new int[]{4, 1, 6, 2};
         int[] result = turner.back(input);
@@ -16,7 +16,7 @@ public class TurnTest {
     }
 
     @Test
-    public void whenTurnArrayWithOddAmountOfElementsThenTurnedArray() {
+    public void array5() {
         Turn turner = new Turn();
         int[] input = new int[]{4, 1, 6, 2, 7};
         int[] result = turner.back(input);

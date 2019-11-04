@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 
 public class TriagleTest {
     @Test
-    public void whenExist() {
+    public void Exist() {
         boolean result = Triangle.exist(2.0, 2.0, 2.0);
         assertThat(result, is(false));
     }

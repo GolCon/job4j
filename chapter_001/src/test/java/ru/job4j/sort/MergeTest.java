@@ -5,10 +5,11 @@ import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
+
 @Ignore
 public class MergeTest {
     @Test
-    public void whenBothEmpty() {
+    public void bothEmpty() {
         Merge algo = new Merge();
         int[] expect = new int[0];
         int[] result = algo.merge(
@@ -19,7 +20,7 @@ public class MergeTest {
     }
 
     @Test
-    public void whenAscOrder() {
+    public void ascOrder() {
         Merge algo = new Merge();
         int[] expect = {1, 2, 3, 4};
         int[] result = algo.merge(
@@ -30,7 +31,7 @@ public class MergeTest {
     }
 
     @Test
-    public void whenLeftLess() {
+    public void leftLess() {
         Merge algo = new Merge();
         int[] expect = {1, 2, 3, 3, 4};
         int[] result = algo.merge(
@@ -41,7 +42,7 @@ public class MergeTest {
     }
 
     @Test
-    public void whenLeftGreat() {
+    public void leftGreat() {
         Merge algo = new Merge();
         int[] expect = {1, 2, 3, 4, 4};
         int[] result = algo.merge(
@@ -52,7 +53,7 @@ public class MergeTest {
     }
 
     @Test
-    public void whenLeftEmpty() {
+    public void leftEmpty() {
         Merge algo = new Merge();
         int[] expect = {1, 2, 3, 4};
         int[] result = algo.merge(
@@ -61,5 +62,4 @@ public class MergeTest {
         );
         assertThat(result, is(expect));
     }
-
 }

@@ -9,7 +9,7 @@ import static org.junit.Assert.assertThat;
 @Ignore
 public class MatrixCheckTest {
     @Test
-    public void whenDataMonoByTrueThenTrue() {
+    public void winVertical() {
         char[][] input = {
                 {' ', ' ', 'X', ' ', ' '},
                 {' ', ' ', 'X', ' ', ' '},
@@ -22,7 +22,7 @@ public class MatrixCheckTest {
     }
 
     @Test
-    public void whenDataNotMonoByTrueThenFalse() {
+    public void lose() {
         char[][] input = {
                 {' ', ' ', 'X', ' ', ' '},
                 {' ', ' ', 'X', ' ', ' '},

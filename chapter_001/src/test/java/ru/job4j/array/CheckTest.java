@@ -1,5 +1,7 @@
 package ru.job4j.array;
+
 import org.junit.Test;
+
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
@@ -21,7 +23,7 @@ public class CheckTest {
     }
 
     @Test
-    public void whenDataNotMonoByTrueThenFalse4() {
+    public void testFalse() {
         Check check = new Check();
         boolean[] input = new boolean[]{true, true, false, true};
         boolean result = check.mono(input);
@@ -29,7 +31,7 @@ public class CheckTest {
     }
 
     @Test
-    public void whenDataMonoByTrueThenTrue4() {
+    public void testTrue() {
         Check check = new Check();
         boolean[] input = new boolean[]{true, true, true, true};
         boolean result = check.mono(input);

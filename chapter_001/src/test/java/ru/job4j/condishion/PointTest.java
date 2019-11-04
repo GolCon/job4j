@@ -2,7 +2,7 @@ package ru.job4j.condishion;
 
 import org.junit.Assert;
 import org.junit.Test;
-import ru.job4j.condishion.Point;
+//import ru.job4j.condishion.Point;
 
 public class PointTest {
     @Test

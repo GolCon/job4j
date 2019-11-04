@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 
 public class ArrayCharTest {
     @Test
-    public void whenStartWithPrefixThenTrue() {
+    public void testTrue() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] pref = {'H', 'e'};
         boolean result = ArrayChar.startsWith(word, pref);
@@ -15,7 +15,7 @@ public class ArrayCharTest {
     }
 
     @Test
-    public void whenNotStartWithPrefixThenFalse() {
+    public void testFalse() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] pref = {'H', 'i'};
         boolean result = ArrayChar.startsWith(word, pref);

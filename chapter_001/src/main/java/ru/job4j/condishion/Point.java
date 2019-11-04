@@ -12,6 +12,5 @@ public class Point {
         System.out.println("result (2,1) to (1,0) = " + resultPointOne);
         System.out.println("result (2,1) to (2,1) = " + resultPointTwo);
         System.out.println("result (2,1) to (2,1) = " + resultPointThree);
-
     }
 }

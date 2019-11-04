@@ -3,26 +3,23 @@ package ru.job4j.array;
 public class MatrixCheck {
     public static boolean isWin(char[][] board) {
         boolean result = false;
-
         for (int row = 0; row < board.length; ++row) {
             int count = 0;
             int cnt = 0;
-            for (int cell = 0; cell < board.length; ++cell) {
-                char sign = board[row][cell];
-
-                System.out.print(sign + " ");
-
-                if (board[row][cell] == 'X') {
-                    count++;
+            if (board[row][row] == 'X') {
+                for (int cell = 0; cell < board.length; ++cell) {
+                    char sign = board[row][cell];
+                    System.out.print(sign + " ");
+                    if (board[row][cell] == 'X') {
+                        count++;
+                    }
+                    if (board[cell][row] == 'X') {
+                        cnt++;
+                    }
                 }
-                if (board[cell][row] == 'X') {
-                    cnt++;
-                }
-
             }
             if (count >= board.length || cnt >= board.length) {
                 result = true;
-
             }
             System.out.println();
         }
@@ -52,7 +49,6 @@ public class MatrixCheck {
         boolean win2 = isWin(hasWinHor);
         System.out.println("A board has winer : " + win2);
         System.out.println();
-
         char[][] notWin = {
                 {'_', '_', 'X', '_', '_'},
                 {'_', '_', 'X', '_', '_'},
@@ -62,7 +58,6 @@ public class MatrixCheck {
         };
         boolean lose = isWin(notWin);
         System.out.println("A board has a winner : " + lose);
-
     }
 }
 
