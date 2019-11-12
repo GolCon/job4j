@@ -8,17 +8,12 @@ public class Merge {
         int i = 0;
         int n = 0;
         while (i + n < left.length + right.length) {
-            if (n == right.length) {
-                while (i < left.length) {
-                    rsl[i + n] = left[i];
-                    ++i;
-                }
-            } else if (i == left.length) {
-                while (n < right.length) {
-                    rsl[i + n] = right[n];
-                    ++n;
-                }
-
+            if (n == right.length & i < left.length) {
+                rsl[i + n] = left[i];
+                ++i;
+            } else if (i == left.length & n < right.length) {
+                rsl[i + n] = right[n];
+                ++n;
             } else { //блок сравнения
                 if (left[i] <= right[n]) {
                     rsl[i + n] = left[i];
