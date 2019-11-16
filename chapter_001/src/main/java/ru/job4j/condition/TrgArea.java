@@ -1,4 +1,7 @@
 package ru.job4j.condition;
+/**
+ * изменение
+ */
 
 import ru.job4j.condishion.Point;
 
