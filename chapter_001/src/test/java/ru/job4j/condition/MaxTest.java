@@ -8,6 +8,6 @@ import static org.junit.Assert.assertThat;
 public class MaxTest {
     @Test
     public void Max1To2() {
-        assertThat(Max.max(1, 2), is(2));
+        assertThat(Max.max(1, 2,3,1), is(3));
     }
 }
