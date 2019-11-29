@@ -1,10 +1,10 @@
 package ru.job4j.profession;
 
 public class Profession {
-    String name;
-    String surname;
-    String education;
-    long birthday;
+    private String name;
+    private String surname;
+    private String education;
+    private long birthday;
 
     public String getName() {
         return this.name;
