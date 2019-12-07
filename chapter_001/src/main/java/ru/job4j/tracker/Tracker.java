@@ -25,8 +25,7 @@ public class Tracker {
             if (this.items[i].getId().equals(id)) {
                 rsl = true;
                 this.items[i] = item;
-                Random rm = new Random();
-                item.setId(String.valueOf(rm.nextLong() + System.currentTimeMillis()));
+                item.setId(generatedId());
                 break;
             }
         }
