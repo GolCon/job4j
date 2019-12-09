@@ -12,9 +12,12 @@ public class Calculator {
      * @param first  - простое число, первое слогаемое.
      * @param second - простое число, второе слогаемое.
      */
-    public static void add(double first, double second) {
-        double result = first + second;
-        System.out.println(first + "+" + second + "=" + result);
+    public double add(double first, double second) {
+        return first + second;
+    }
+
+    public double add(double first, double second, double third) {
+        return add(first,add(second,third));
     }
 
     /**
@@ -54,11 +57,12 @@ public class Calculator {
      * Main.
      *
      * @param args - args.
-     */
+
     public static void main(String[] args) {
         add(1, 1);
         div(4, 2);
         multiply(2, 1);
         subtrack(10, 5);
     }
+    */
 }
