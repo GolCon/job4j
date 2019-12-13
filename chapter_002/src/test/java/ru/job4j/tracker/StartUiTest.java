@@ -1,10 +1,10 @@
 package ru.job4j.tracker;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertThat;
 
 public class StartUiTest {
     @Test
@@ -25,8 +25,8 @@ public class StartUiTest {
         tracker.add(item1);
         String[] answers = {item1.getId(), "replaced item"};
         StartUi.editItem(new StabInput(answers), tracker);
-        Item[] replased = tracker.findByName("replaced item");
-        assertThat(replased[0].getName(), is("replaced item"));
+        Item replased = tracker.findById(item1.getId());
+        assertThat(replased.getName(), is("replaced item"));
     }
 
     @Test

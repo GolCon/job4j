@@ -1,7 +1,5 @@
 package ru.job4j.tracker;
 
-import junit.framework.TestResult;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;
