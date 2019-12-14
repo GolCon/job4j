@@ -12,8 +12,8 @@ public class Item {
         return id;
     }
 
-    public void setId(String Id) {
-        this.id = Id;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {

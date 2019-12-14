@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 
 public class SortSelectedTest {
     @Test
-    public void Sort5() {
+    public void sort5() {
         int[] input = new int[]{3, 4, 1, 2, 5};
         int[] result = SortSelected.sort(input);
         int[] expect = new int[]{1, 2, 3, 4, 5};
@@ -15,7 +15,7 @@ public class SortSelectedTest {
     }
 
     @Test
-    public void Sort3() {
+    public void sort3() {
         int[] input = new int[]{7, 3, 4};
         int[] result = SortSelected.sort(input);
         int[] expect = new int[]{3, 4, 7};

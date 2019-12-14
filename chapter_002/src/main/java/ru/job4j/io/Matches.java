@@ -1,7 +1,7 @@
 package ru.job4j.io;
 
-import java.util.Scanner;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Matches {
     public static void main(String[] args) {

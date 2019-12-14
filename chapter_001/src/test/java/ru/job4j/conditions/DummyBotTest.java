@@ -9,17 +9,17 @@ import static org.junit.Assert.assertThat;
 public class DummyBotTest {
 
     @Test
-    public void Greet() {
+    public void greet() {
         assertThat(DummyBot.answer("Привет."), is("Привет пользователь!"));
     }
 
     @Test
-    public void Bye() {
+    public void bye() {
         assertThat(DummyBot.answer("Пока."), is("До скорой встречи!"));
     }
 
     @Test
-    public void Unknow() {
+    public void unknow() {
         assertThat(DummyBot.answer("Как настроение?"), is("Это ставит меня в тупик, задайте другой вопрос."));
     }
 }

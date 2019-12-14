@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 
 public class CounterTest {
     @Test
-    public void Sum1to10() {
+    public void sum1To10() {
         int result = Counter.add(1, 10);
         assertThat(result, is(30));
     }

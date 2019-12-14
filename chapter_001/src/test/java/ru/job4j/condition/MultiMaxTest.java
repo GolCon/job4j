@@ -8,7 +8,7 @@ import static org.junit.Assert.assertThat;
 
 public class MultiMaxTest {
     @Test
-    public void SecondMax() {
+    public void secondMax() {
         MultiMax check = new MultiMax();
         int result = check.max(4, 2, 8);
         assertThat(result, is(8));

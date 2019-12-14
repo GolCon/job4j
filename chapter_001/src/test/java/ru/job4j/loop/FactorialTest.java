@@ -19,7 +19,7 @@ public class FactorialTest {
     }
 
     @Test
-    public void FactorialOne() {
+    public void factorialOne() {
         int result = Factorial.calc(1);
         assertThat(result, is(1));
     }

@@ -9,6 +9,6 @@ public class College {
         student.setGroup("A-4");
         student.setDate(new Date());
 
-        System.out.println("Абитуриент "+student.getFullName()+" зачислен в группу "+student.getGroup());
+        System.out.println("Абитуриент " + student.getFullName() + " зачислен в группу " + student.getGroup());
     }
 }

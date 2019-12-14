@@ -27,15 +27,14 @@ public class TrgArea {
         double p = period(a, b, c);
         if (exist(a, b, c)) {
             return Math.sqrt(p * (p - a) * (p - b) * (p - c));
-        } else return -1;
+        } else {
+            return -1;
+        }
     }
 
     public static boolean exist(double a, double b, double c) {
-        if (a + b > c & b + c > a & c + a > a) {
-            return true;
-        } else return false;
+        return (a + b > c || b + c > a ? true : false);
     }
 }
-
 
 

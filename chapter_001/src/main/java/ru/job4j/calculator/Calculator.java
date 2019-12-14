@@ -17,7 +17,7 @@ public class Calculator {
     }
 
     public double add(double first, double second, double third) {
-        return add(first,add(second,third));
+        return add(first, add(second, third));
     }
 
     /**
@@ -59,10 +59,10 @@ public class Calculator {
      * @param args - args.
 
     public static void main(String[] args) {
-        add(1, 1);
-        div(4, 2);
-        multiply(2, 1);
-        subtrack(10, 5);
+    add(1, 1);
+    div(4, 2);
+    multiply(2, 1);
+    subtrack(10, 5);
     }
-    */
+     */
 }

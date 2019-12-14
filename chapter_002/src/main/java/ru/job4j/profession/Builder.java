@@ -1,9 +1,9 @@
 package ru.job4j.profession;
 
 public class Builder extends Engineer {
-    private Task safetyАactor;
+    private Task safetyActor;
 
     public Task calculation(Client developer) {
-        return safetyАactor;
+        return safetyActor;
     }
 }
