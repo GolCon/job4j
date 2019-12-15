@@ -58,4 +58,4 @@ public class TrackerTest {
         Item[] tests = {first, next};
         assertThat(tracker.findByName("test1"), is(tests));
     }
-}
+   }
