@@ -7,6 +7,10 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.util.StringJoiner;
+
 public class StartUiTest {
 
     @Test
@@ -48,5 +52,21 @@ public class StartUiTest {
         StubAction action = new StubAction();
         new StartUi().init(input, new Tracker(), new UserAction[]{action});
         assertThat(action.isCall(), Matchers.is(true));
+    }
+
+    @Test
+    public void whenPrtMenu() {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        PrintStream def = System.out;
+        System.setOut(new PrintStream(out));
+        StabInput input = new StabInput(new String[]{"0"});
+        StubAction action = new StubAction();
+        new StartUi().init(input, new Tracker(), new UserAction[]{action});
+        String expect = new StringJoiner(System.lineSeparator(), "", System.lineSeparator())
+                .add("Menu.")
+                .add("0. Stub action")
+                .toString();
+        assertThat(new String(out.toByteArray()), is(expect));
+        System.setOut(def);
     }
 }
